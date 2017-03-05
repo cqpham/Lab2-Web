@@ -1,0 +1,50 @@
+.main-carousel {
+  height: 300px;
+}
+
+.main-jumbotron {
+  height: 300px;
+}
+
+.phone-size {
+  max-width: 80px;
+  max-height: 100px;
+}
+
+.main-margin {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main-title {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thumbnail-list {
+  text-align: center;
+}
+
+.thumbnail-list .thumbnail {
+  margin-top: 9px;
+  text-decoration: none;
+}
+
+.thumbnail-list .thumbnail img {
+  margin-top: 9px;
+  height: 150px;
+  width: auto;
+}
+
+.numberLabel {
+  font-size: 28px;
+}
+
+.captionText {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.caption {
+  text-align: center;
+}
