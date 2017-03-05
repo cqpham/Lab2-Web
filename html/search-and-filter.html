@@ -66,9 +66,80 @@
     </nav>
 
     <div class="container">
-      <div id="filter-sort-bar">
+      <div id="sort-bar">
+        <button class="btn btn-default" data-sort-by="name">name</button>
       </div>
-      <div id="dashboard">
+      <div id="filter-bar">
+        <button class="btn btn-default" data-filter=".brand1">brand1</button>
+        <button class="btn btn-default" data-filter=".brand2">brand2</button>
+      </div>
+      <div class="container">
+        <div id="dashboard">
+          <div class="dashboard-item brand1">
+            <a href="#" class="thumbnail">
+              <img src="../img/cellphone_icon.png" alt="Mobile 1">
+              <div class="caption">
+                <p class="captionText name">Mobile 1</p>
+              </div>
+            </a>
+          </div>
+          <div class="dashboard-item">
+            <a href="#" class="thumbnail brand1">
+              <img src="../img/cellphone_icon.png" alt="Mobile 2">
+              <div class="caption">
+                <p class="captionText name">Mobile 2</p>
+              </div>
+            </a>
+          </div>
+          <div class="dashboard-item brand2">
+            <a href="#" class="thumbnail">
+              <img src="../img/cellphone_icon.png" alt="Mobile 3">
+              <div class="caption">
+                <p class="captionText name">Mobile 3</p>
+              </div>
+            </a>
+          </div>
+          <div class="dashboard-item brand1">
+            <a href="#" class="thumbnail">
+              <img src="../img/cellphone_icon.png" alt="Mobile 4">
+              <div class="caption">
+                <p class="captionText name">Mobile 4</p>
+              </div>
+            </a>
+          </div>
+          <div class="dashboard-item brand2">
+            <a href="#" class="thumbnail">
+              <img src="../img/cellphone_icon.png" alt="Mobile 5">
+              <div class="caption">
+                <p class="captionText name">Mobile 5</p>
+              </div>
+            </a>
+          </div>
+          <div class="dashboard-item brand1">
+            <a href="#" class="thumbnail">
+              <img src="../img/cellphone_icon.png" alt="Mobile 6">
+              <div class="caption">
+                <p class="captionText name">Mobile 6</p>
+              </div>
+            </a>
+          </div>
+          <div class="dashboard-item brand2">
+            <a href="#" class="thumbnail">
+              <img src="../img/cellphone_icon.png" alt="Mobile 7">
+              <div class="caption">
+                <p class="captionText name">Mobile 7</p>
+              </div>
+            </a>
+          </div>
+          <div class="dashboard-item brand1">
+            <a href="#" class="thumbnail">
+              <img src="../img/cellphone_icon.png" alt="Mobile 8">
+              <div class="caption">
+                <p class="captionText name">Mobile 8</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
 
     <hr class="featurette-divider"/>
@@ -80,9 +151,11 @@
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../bootstrap/js/bootstrap.min.js"></script>
   <script src="../js/isotope.pkgd.min.js"></script>
+  <script src="../js/sort-filter.js">
+  </script>
 </body>
 </html>
