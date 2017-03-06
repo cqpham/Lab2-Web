@@ -65,16 +65,61 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="container">
-      <div id="sort-bar">
-        <button class="btn btn-default" data-sort-by="name">name</button>
-      </div>
-      <div id="filter-bar">
-        <button class="btn btn-default" data-filter=".brand1">brand1</button>
-        <button class="btn btn-default" data-filter=".brand2">brand2</button>
-      </div>
-      <div class="container">
-        <div id="dashboard">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="filter-sort-sidepanel" class="col-sm-2">
+          <form>
+            <!--
+            <div id="sort-bar">
+              <button class="btn btn-default" data-sort-by="name">name</button>
+            </div>
+            <div id="filter-bar">
+              <button class="btn btn-default" data-filter=".brand1">brand1</button>
+              <button class="btn btn-default" data-filter=".brand2">brand2</button>
+            </div>
+          -->
+            <div class="form-group" id="filterByBrand">
+              <h4>Brand</h4>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chkApple" value=".brand1">Apple</input></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chkSamsung"  value=".brand1">Samsung</input></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chkGoogle" value=".brand2">Google</input></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chkBlackberry" value=".brand2">Blackberry</input></label>
+              </div>
+            </div>
+            <div class="row" id="filterByPrice">
+            </div>
+            <div class="row" id="filterByOS">
+            </div>
+            <div class="row" id="filterByScreenSize">
+            </div>
+            <div class="form-group" id="filterByCustomerRating">
+              <h4>Customer Rating</h4>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chk5Star" value=".brand1">5 stars</input></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chk4Star"  value=".brand1">4 stars</input></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chk3Star" value=".brand2">3 stars</input></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chk2Star" value=".brand2">2 stars</input></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="chk1Star" value=".brand2">1 star</input></label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="dashboard" class="col-sm-10">
           <div class="dashboard-item brand1">
             <a href="#" class="thumbnail">
               <img src="../img/cellphone_icon.png" alt="Mobile 1">
@@ -83,8 +128,8 @@
               </div>
             </a>
           </div>
-          <div class="dashboard-item">
-            <a href="#" class="thumbnail brand1">
+          <div class="dashboard-item brand1">
+            <a href="#" class="thumbnail">
               <img src="../img/cellphone_icon.png" alt="Mobile 2">
               <div class="caption">
                 <p class="captionText name">Mobile 2</p>
