@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Device Information Page Template</title>
 
     <!-- Bootstrap -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
   </head>
   <body>
     <div id="title" class="main-title">
-      <h1>Title</h1>
+      <h1>The Phone Hut</h1>
     </div>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -65,28 +65,12 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <!--<div class="container">
-      <div class="panel panel-default">
-        <div class="panel-heading device-main">
-          <div class="row">
-            <h3 class="panel-title col-sm-4 device-main-name">Device Name</h3>
-            <div class="col-sm-3 col-sm-offset-5 device-main-customer-rating">
-              Device Customer Rating
-            </div>
-          </div>
-        </div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
-    </div>-->
-
     <div class="container">
       <div class="row device-main" id="">
-        <div class="col-sm-4 device-main-name">
-          Device Name
+        <div class="col-sm-8 device-main-name">
+          <h2>Device Name: Huawei P10</h2>
         </div>
-        <div class="col-sm-3 col-sm-offset-5 device-main-customer-rating">
+        <div class="col-sm-3 col-sm-offset-1 device-main-customer-rating">
           Device Customer Rating
         </div>
       </div>
@@ -107,62 +91,101 @@
       <div class="row device-specs" id="">
         <div class="col-sm-12">
           <p>Device Specifications</p>
-          <p>Network, Launch, Body, Display, Platform, Memory, Camera, Sound, Comms, Features, Battery, Misc</p>
           <div class="panel-group" id="device-specs-collapsible" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading" role="button" id="device-specs-collapsible-network" data-toggle="collapse" href="#collapseSpecsNetwork" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-network" data-toggle="collapse" href="#collapseSpecsNetwork" aria-expanded="true" aria-controls="collapseOne">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Network
-                  </a>
+                  <a class="collapse-toggle">Network</a>
                 </h4>
               </div>
-              <div id="collapseSpecsNetwork" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="device-specs-collapsible-network">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+              <div id="collapseSpecsNetwork" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-network">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
               <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-launch" data-toggle="collapse" data-parent="" href="#collapseSpecsLaunch" aria-expanded="false" aria-controls="collapseTwo">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Launch
-                  </a>
+                  <a class="collapse-toggle">Launch</a>
                 </h4>
               </div>
               <div id="collapseSpecsLaunch" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-launch">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Announced</div>
+                      <div class="col-sm-8">2017, February</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Status</div>
+                      <div class="col-sm-8">Coming soon. Exp. release 2017, March</div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
               <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-body" role="button" data-toggle="collapse" data-parent="" href="#collapseSpecsBody" aria-expanded="false" aria-controls="collapseThree">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Body
-                  </a>
+                  <a class="collapse-toggle">Body</a>
                 </h4>
               </div>
               <div id="collapseSpecsBody" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-body">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Dimensions</div>
+                      <div class="col-sm-8">145.3 x 69.3 x 7 mm (5.72 x 2.73 x 0.28 in)</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Weight</div>
+                      <div class-"col-sm-8">145 g (5.11 oz)</div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="button" id="device-specs-collapsible-display" data-toggle="collapse" href="#collapseSpecsDisplay" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-display" data-toggle="collapse" href="#collapseSpecsDisplay" aria-expanded="true" aria-controls="collapseOne">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">
                     Display
                   </a>
                 </h4>
               </div>
-              <div id="collapseSpecsDisplay" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="device-specs-collapsible-display">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+              <div id="collapseSpecsDisplay" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-display">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
@@ -174,9 +197,22 @@
                 </h4>
               </div>
               <div id="collapseSpecsPlatform" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-platform">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
@@ -188,23 +224,49 @@
                 </h4>
               </div>
               <div id="collapseSpecsMemory" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-memory">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="button" id="device-specs-collapsible-camera" data-toggle="collapse" href="#collapseSpecsCamera" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-camera" data-toggle="collapse" href="#collapseSpecsCamera" aria-expanded="true" aria-controls="collapseOne">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">
                     Camera
                   </a>
                 </h4>
               </div>
-              <div id="collapseSpecsCamera" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="device-specs-collapsible-camera">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+              <div id="collapseSpecsCamera" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-camera">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
@@ -216,9 +278,22 @@
                 </h4>
               </div>
               <div id="collapseSpecsSound" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-sound">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
@@ -230,23 +305,49 @@
                 </h4>
               </div>
               <div id="collapseSpecsComms" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-comms">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="button" id="device-specs-collapsible-features" data-toggle="collapse" href="#collapseSpecsFeatures" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-features" data-toggle="collapse" href="#collapseSpecsFeatures" aria-expanded="true" aria-controls="collapseOne">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">
                     Features
                   </a>
                 </h4>
               </div>
-              <div id="collapseSpecsFeatures" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="device-specs-collapsible-features">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+              <div id="collapseSpecsFeatures" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-features">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="panel panel-default">
@@ -257,24 +358,23 @@
                   </a>
                 </h4>
               </div>
-              <div id="collapseSpecsBatter" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-battery">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-misc"data-toggle="collapse" data-parent="" href="#collapseSpecsMisc" aria-expanded="false" aria-controls="collapseThree">
-                <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Misc
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseSpecsBody" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-body">
-                <div class="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+              <div id="collapseSpecsBattery" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-battery">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Technology</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>GSM</li>
+                          <li>HSPA</li>
+                          <li>LTE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
