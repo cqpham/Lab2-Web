@@ -33,3 +33,17 @@
         float: left;
     }
 }
+
+.col-xxs-1 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 525px) {
+  .col-xxs-1 {
+    width: 100%;
+    float: left;
+  }
+}
