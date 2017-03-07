@@ -72,6 +72,15 @@
         </div>
         <div class="col-sm-3 col-sm-offset-1 device-main-customer-rating">
           Device Customer Rating
+          <div class="row">
+            <div class="col-sm-12">
+              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -96,7 +105,7 @@
           <p>Device Specifications</p>
           <div class="panel-group" id="device-specs-collapsible" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-network" data-toggle="collapse" href="#collapseSpecsNetwork" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-network" data-toggle="collapse" href="#collapseSpecsNetwork" aria-expanded="true" aria-controls="collapseSpecsNetwork">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">Network</a>
                 </h4>
@@ -106,20 +115,14 @@
                   <li class="list-group-item">
                     <div class="row">
                       <div class="col-sm-4">Technology</div>
-                      <div class="col-sm-8">
-                        <ul>
-                          <li>GSM</li>
-                          <li>HSPA</li>
-                          <li>LTE</li>
-                        </ul>
-                      </div>
+                      <div class="col-sm-8">GSM/HSPA/LTE</div>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-launch" data-toggle="collapse" data-parent="" href="#collapseSpecsLaunch" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-launch" data-toggle="collapse" data-parent="" href="#collapseSpecsLaunch" aria-expanded="false" aria-controls="collapseSpecsLaunch">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">Launch</a>
                 </h4>
@@ -142,7 +145,7 @@
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-body" role="button" data-toggle="collapse" data-parent="" href="#collapseSpecsBody" aria-expanded="false" aria-controls="collapseThree">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-body" role="button" data-toggle="collapse" data-parent="" href="#collapseSpecsBody" aria-expanded="false" aria-controls="collapseSpecsBody">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">Body</a>
                 </h4>
@@ -165,7 +168,7 @@
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-display" data-toggle="collapse" href="#collapseSpecsDisplay" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-display" data-toggle="collapse" href="#collapseSpecsDisplay" aria-expanded="true" aria-controls="collapseSpecsDisplay">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">Display</a>
                 </h4>
@@ -202,11 +205,20 @@
                       <div class="col-sm-8">Corning Gorilla Glass 5</div>
                     </div>
                   </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-8 col-sm-offset-4">
+                        <ul>
+                          <li>Emotion UI 5.1</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-platform" data-toggle="collapse" data-parent="" href="#collapseSpecsPlatform" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-platform" data-toggle="collapse" data-parent="" href="#collapseSpecsPlatform" aria-expanded="false" aria-controls="collapseSpecsPlatform">
                 <h4 class="panel-title">
                   <a class="collapse-toggle">Platform</a>
                 </h4>
@@ -241,163 +253,232 @@
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-memor" role="button" data-toggle="collapse" data-parent="" href="#collapseSpecsMemory" aria-expanded="false" aria-controls="collapseThree">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-memor" role="button" data-toggle="collapse" data-parent="" href="#collapseSpecsMemory" aria-expanded="false" aria-controls="collapseSpecsMemory">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Memory
-                  </a>
+                  <a class="collapse-toggle">Memory</a>
                 </h4>
               </div>
               <div id="collapseSpecsMemory" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-memory">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <div class="row">
-                      <div class="col-sm-4">Technology</div>
-                      <div class="col-sm-8">
-                        <ul>
-                          <li>GSM</li>
-                          <li>HSPA</li>
-                          <li>LTE</li>
-                        </ul>
-                      </div>
+                      <div class="col-sm-4">Card slot</div>
+                      <div class="col-sm-8">microSD, up to 256 GB (uses SIM 2 slot)</div>
                     </div>
                   </li>
                   <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Internal</div>
+                      <div class="col-sm-8">32 GB (L09)/ 64 GB (L29), 4 GB RAM</div>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-camera" data-toggle="collapse" href="#collapseSpecsCamera" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-camera" data-toggle="collapse" href="#collapseSpecsCamera" aria-expanded="true" aria-controls="collapseSpecsCamera">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Camera
-                  </a>
+                  <a class="collapse-toggle">Camera</a>
                 </h4>
               </div>
               <div id="collapseSpecsCamera" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-camera">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <div class="row">
-                      <div class="col-sm-4">Technology</div>
-                      <div class="col-sm-8">
-                        <ul>
-                          <li>GSM</li>
-                          <li>HSPA</li>
-                          <li>LTE</li>
-                        </ul>
-                      </div>
+                      <div class="col-sm-4">Primary</div>
+                      <div class="col-sm-8">Dual 20 MP + 12 MP, f/2.2, OIS, Leica optics, phase detection and laser autofocus, dual-LED (dual tone) flash</div>
                     </div>
                   </li>
                   <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Features</div>
+                      <div class="col-sm-8">Geo-tagging, touch focus, face detection, HDR, panorama</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Video</div>
+                      <div class="col-sm-8">2160p@30fps, 1080p@60fps</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Secondary</div>
+                      <div class="col-sm-8">8 MP, f/1.9</div>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-sound" data-toggle="collapse" data-parent="" href="#collapseSpecsSound" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-sound" data-toggle="collapse" data-parent="" href="#collapseSpecsSound" aria-expanded="false" aria-controls="collapseSpecsSound">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Sound
-                  </a>
+                  <a class="collapse-toggle">Sound</a>
                 </h4>
               </div>
               <div id="collapseSpecsSound" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-sound">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <div class="row">
-                      <div class="col-sm-4">Technology</div>
-                      <div class="col-sm-8">
-                        <ul>
-                          <li>GSM</li>
-                          <li>HSPA</li>
-                          <li>LTE</li>
-                        </ul>
-                      </div>
+                      <div class="col-sm-4">Alert types</div>
+                      <div class="col-sm-8">Vibration; MP3, WAV ringtones</div>
                     </div>
                   </li>
                   <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Loudspeaker</div>
+                      <div class="col-sm-8">Yes, with stereo speakers</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">3.5mm jack</div>
+                      <div class="col-sm-8">Yes</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-8 col-sm-offset-4">
+                        <ul>
+                          <li>24-bit/192kHz audio</li>
+                          <li>Active noise cancellation with dedicated mic</li>
+                        </ul>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed"id="device-specs-collapsible-comms" role="button" data-toggle="collapse" data-parent="" href="#collapseSpecsComms" aria-expanded="false" aria-controls="collapseThree">
+              <div class="panel-heading collapsed"id="device-specs-collapsible-comms" role="button" data-toggle="collapse" data-parent="" href="#collapseSpecsComms" aria-expanded="false" aria-controls="collapseSpecsComms">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Comms
-                  </a>
+                  <a class="collapse-toggle">Comms</a>
                 </h4>
               </div>
               <div id="collapseSpecsComms" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-comms">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <div class="row">
-                      <div class="col-sm-4">Technology</div>
-                      <div class="col-sm-8">
-                        <ul>
-                          <li>GSM</li>
-                          <li>HSPA</li>
-                          <li>LTE</li>
-                        </ul>
-                      </div>
+                      <div class="col-sm-4">WLAN</div>
+                      <div class="col-sm-8">Wi-Fi 802.11 a/b/g/n/ac, dual-band, DLNA, WiFi Direct, hotspot</div>
                     </div>
                   </li>
                   <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Bluetooth</div>
+                      <div class="col-sm-8">v4.2, A2DP, LE</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">GPS</div>
+                      <div class="col-sm-8">Yes, with A-GPS, GLONASS, BDS, GALILEO</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">NFC</div>
+                      <div class="col-sm-8">Yes</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Radio</div>
+                      <div class="col-sm-8">No</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">USB</div>
+                      <div class="col-sm-8">v2.0, Type-C 1.0 reversible connector</div>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-features" data-toggle="collapse" href="#collapseSpecsFeatures" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-features" data-toggle="collapse" href="#collapseSpecsFeatures" aria-expanded="true" aria-controls="collapseSpecsFeatures">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Features
-                  </a>
+                  <a class="collapse-toggle">Features</a>
                 </h4>
               </div>
               <div id="collapseSpecsFeatures" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-features">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <div class="row">
-                      <div class="col-sm-4">Technology</div>
-                      <div class="col-sm-8">
-                        <ul>
-                          <li>GSM</li>
-                          <li>HSPA</li>
-                          <li>LTE</li>
-                        </ul>
-                      </div>
+                      <div class="col-sm-4">Sensors</div>
+                      <div class="col-sm-8">Fingerprint (front-mounted), accelerometer, gyro, proximity, compass</div>
                     </div>
                   </li>
                   <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Messaging</div>
+                      <div class="col-sm-8">SMS(threaded view), MMS, Email, Push Mail, IM</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Browser</div>
+                      <div class="col-sm-8">HTML5</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Java</div>
+                      <div class="col-sm-8">No</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-8 col-sm-offset-4">
+                        <ul>
+                          <li>Fast battery charging</li>
+                          <li>XviD/MP4/H.265 player</li>
+                          <li>MP3/eAAC+/WAV/Flac player</li>
+                          <li>Document viewer</li>
+                          <li>Photo/video editor</li>
+                        </ul>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-battery" data-toggle="collapse" data-parent="" href="#collapseSpecsBattery" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-battery" data-toggle="collapse" data-parent="" href="#collapseSpecsBattery" aria-expanded="false" aria-controls="collapseSpecsBattery">
                 <h4 class="panel-title">
-                  <a class="collapse-toggle">
-                    Battery
-                  </a>
+                  <a class="collapse-toggle">Battery</a>
                 </h4>
               </div>
               <div id="collapseSpecsBattery" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-battery">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <div class="row">
-                      <div class="col-sm-4">Technology</div>
-                      <div class="col-sm-8">
-                        <ul>
-                          <li>GSM</li>
-                          <li>HSPA</li>
-                          <li>LTE</li>
-                        </ul>
-                      </div>
+                      <div class="col-sm-8 col-sm-offset-4">Non-removable Li-Ion 3200 mAh battery</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading collapsed" role="button" id="device-specs-collapsible-misc" data-toggle="collapse" data-parent="" href="#collapseSpecsMisc" aria-expanded="false" aria-controls="collapseSpecsMisc">
+                <h4 class="panel-title">
+                  <a class="collapse-toggle">Misc</a>
+                </h4>
+              </div>
+              <div id="collapseSpecsMisc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="device-specs-collapsible-misc">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Colors</div>
+                      <div class="col-sm-8">Mystic Silver, Rose Gold, Graphite Black, Dazzling Gold, Dazzling Blue, Greenery</div>
                     </div>
                   </li>
                   <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-sm-4">Price group</div>
+                      <div class="col-sm-8">9/10 (About 650 EUR)</div>
+                    </div>
                   </li>
                 </ul>
               </div>
