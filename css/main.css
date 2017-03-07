@@ -67,3 +67,8 @@
 .panel-heading a {
   text-decoration: none;
 }
+
+.fixed {
+  position: fixed;
+  top: 10px;
+}
