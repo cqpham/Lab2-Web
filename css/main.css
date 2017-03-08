@@ -72,3 +72,11 @@
   position: fixed;
   top: 10px;
 }
+
+span.glyphicon-star-empty {
+  font-size: 1.5em;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
