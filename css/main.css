@@ -73,8 +73,24 @@
   top: 10px;
 }
 
-span.glyphicon-star-empty {
+.device-main-customer-rating span.glyphicon, .device-main-customer-rating .rating-score {
   font-size: 1.5em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.device-main-customer-rating span.glyphicon-star.rated {
+  color: gold;
+  /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+}
+
+.device-main-customer-rating span.glyphicon-star {
+  color: lightgray;
+  /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+}
+
+.rating-score {
+  margin-left: 10px;
 }
 
 .dropdown-submenu {
