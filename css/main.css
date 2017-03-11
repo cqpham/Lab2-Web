@@ -92,3 +92,12 @@
 .rating-score {
   margin-left: 10px;
 }
+
+#items-table-cart img.media-object {
+  max-width: 30%;
+  height: auto;
+}
+
+#items-table-cart td {
+  vertical-align: middle;
+}
