@@ -42,24 +42,14 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
             <li><a href="search-and-filter.html">Browse</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+          <form class="navbar-form navbar-right" role="search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="q">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit" formaction="search-and-filter.html"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
             </div>
-            <button type="submit" class="btn btn-default" formaction="search-and-filter.html">Submit</button>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -68,7 +58,7 @@
     <div class="container">
       <div class="row device-main" id="">
         <div class="col-sm-8 device-main-name">
-          <h2>Device Name: Huawei P10</h2>
+          <h2>Device Name: Mobile Name</h2>
         </div>
         <div class="col-sm-3 col-sm-offset-1 device-main-customer-rating">
           <div class="row">
@@ -129,7 +119,7 @@
 
       <hr class="featurette-divider"/>
 
-      <div class="row device-specs" id="">
+      <div class="row" id="device-specs">
         <div class="col-sm-12">
           <h4>Device Specifications</h4>
           <div class="panel-group" id="device-specs-collapsible" role="tablist" aria-multiselectable="true">
@@ -513,6 +503,46 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider"/>
+
+      <div class="row" id="device-related">
+        <div>
+          <h4>Other devices you may be interested in...</h4>
+        </div>
+        <div class="col-md-3 col-md-offset-0 col-xs-6 col-xxs-1">
+          <a href="deviceInformationPageTemplate.html" class="thumbnail">
+            <img src="../img/cellphone_icon.png" alt="Mobile 1">
+            <div class="caption">
+              <p class="captionText">Mobile 1</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-md-offset-0 col-xs-6 col-xxs-1">
+          <a href="deviceInformationPageTemplate.html" class="thumbnail">
+            <img src="../img/cellphone_icon.png" alt="Mobile 2">
+            <div class="caption">
+              <p class="captionText">Mobile 2</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-md-offset-0 col-xs-6 col-xxs-1">
+          <a href="deviceInformationPageTemplate.html" class="thumbnail">
+            <img src="../img/cellphone_icon.png" alt="Mobile 3">
+            <div class="caption">
+              <p class="captionText">Mobile 3</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-md-offset-0 col-xs-6 col-xxs-1">
+          <a href="deviceInformationPageTemplate.html" class="thumbnail">
+            <img src="../img/cellphone_icon.png" alt="Mobile 4">
+            <div class="caption">
+              <p class="captionText">Mobile 4</p>
+            </div>
+          </a>
         </div>
       </div>
 

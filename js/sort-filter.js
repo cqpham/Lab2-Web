@@ -31,7 +31,7 @@ $('#filterByBrand').on('click', 'input[type="checkbox"]', function() {
 });*/
 
 // filter with selects and checkboxes
-var $checkboxes = $('#filterByBrand input');
+var $checkboxes = $('#filter-sort-sidepanel input');
 
 $checkboxes.change( function() {
   // map input values to an array
