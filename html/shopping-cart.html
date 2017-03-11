@@ -60,10 +60,11 @@
         <table class="table table-hover">
           <thead>
             <tr>
-              <th>Product Name</th>
-              <th>Quantity</th>
-              <th>Price</th>
-              <th>Total</th>
+              <th class="col-sm-6">Product Name</th>
+              <th class="col-sm-1 text-align-center">Quantity</th>
+              <th class="col-sm-2 text-align-center">Price</th>
+              <th class="col-sm-2 text-align-center">Total</th>
+              <th class="col-sm-1"></th>
           </thead>
           <tbody>
             <tr>
@@ -82,11 +83,81 @@
                 <label class="sr-only" for="quantity-1"></label>
                 <input type="number" class="form-control text-center" id="quantity-1" value="1">
               </td>
-              <td><strong id="price-1">$400</strong></td>
-              <td><strong id="total-1">$400</strong></td>
+              <td><div id="price-1" class="text-align-center">$432.99</div></td>
+              <td class="text-align-center"><strong id="total-1">432.99</strong></td>
+              <td>
+                <button class="btn btn-danger btn-sm" type="submit"><span class="glyphicon glyphicon-remove"></span> Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="media">
+                  <a class="thumbnail pull-left" href="#">
+                    <img class="media-object" src="../img/cellphone_icon.png">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Product Name</h4>
+                    <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <label class="sr-only" for="quantity-2"></label>
+                <input type="number" class="form-control text-center" id="quantity-2" value="1">
+              </td>
+              <td><div id="price-2" class="text-align-center">$299.99</div></td>
+              <td class="text-align-center"><strong id="total-2">$299.99</strong></td>
+              <td>
+                <button class="btn btn-danger btn-sm" type="submit"><span class="glyphicon glyphicon-remove"></span> Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="media">
+                  <a class="thumbnail pull-left" href="#">
+                    <img class="media-object" src="../img/cellphone_icon.png">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Product Name</h4>
+                    <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <label class="sr-only" for="quantity-3"></label>
+                <input type="number" class="form-control text-center" id="quantity-3" value="1">
+              </td>
+              <td><div id="price-3" class="text-align-center">$350.00</div></td>
+              <td class="text-align-center"><strong id="total-3">$350.00</strong></td>
+              <td>
+                <button class="btn btn-danger btn-sm" type="submit"><span class="glyphicon glyphicon-remove"></span> Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><strong>Subtotal</strong></td>
+              <td class="text-align-center"><strong>$1,082.98</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><strong>Estimated Shipping</strong></td>
+              <td class="text-align-center"><strong>$5.99</strong></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
+
+        <div class="row">
+          <div class="col-sm-2">
+            <button class="btn btn-warning btn-md" type="submit"><span class="glyphicon glyphicon-chevron-left"></span> Continue Shopping</button>
+          </div>
+          <div class="col-sm-3 col-sm-offset-7">
+            <button class="btn btn-success btn-md pull-right" type="submit">Proceed to Checkout <span class="glyphicon glyphicon-chevron-right"></span></button>
+          </div>
+        </div>
       </div>
 
       <hr class="featurette-divider"/>
