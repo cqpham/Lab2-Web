@@ -57,17 +57,15 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
+              <div class="panel-heading" role="button" id="deliveryInfo" data-toggle="collapse" href="#deliveryInfoContent" aria-expanded="true" aria-controls="">
                 <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Delivery
-                  </a>
+                  <a>1. Delivery Information</a>
                 </h4>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div id="deliveryInfoContent" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="deliveryInfo">
                 <div class="panel-body">
                   <form>
                     <div class="row form-group">
@@ -157,47 +155,55 @@
                             <div class="radio">
                               <label>
                                 <input type="radio" name="shippingOptions" id="shippingOption1" value="option1" checked>
-                                Deliver TOMORROW
+                                7-10 business days - FREE (CA $250.00 min)
                               </label>
                             </div>
                             <div class="radio">
                               <label>
                                 <input type="radio" name="shippingOptions" id="shippingOption2" value="option2">
-                                Free Shipping - Deliver by WEDNESDAY, MARCH 15
+                                4-5 business days - CA $20.00
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="shippingOptions" id="shippingOption2=3" value="option3">
+                                2 business days - CA $44.00
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="shippingOptions" id="shippingOption4" value="option4">
+                                1 business day - CA $50.00
                               </label>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#collapseTwo">Continue</button>
                   </form>
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTwo">
+              <div class="panel-heading collapsed" role="button" id="payInfo" data-toggle="collapse" href="#payInfoContent" aria-expanded="true" aria-controls="payInfoContent">
                 <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Payment
-                  </a>
+                  <a>2. Payment</a>
                 </h4>
               </div>
-              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div id="payInfoContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading collapsed" role="button" id="reviewInfo" data-toggle="collapse" href="#reviewInfoContent" aria-expanded="true" aria-controls="reviewInfoContent">
                 <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Review and Submit
-                  </a>
+                  <a>3. Review and Submit</a>
                 </h4>
               </div>
-              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="reviewInfoContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
@@ -205,7 +211,38 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Your Order</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <td>Product Total</td>
+                    <td>$1,082.98</td>
+                  </tr>
+                  <tr class="row-bottom-border">
+                    <td>Shipping Total</td>
+                    <td>$50.00</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Subtotal</strong></td>
+                    <td><strong>$1,132.98</strong></td>
+                  </tr>
+                  <tr class="row-bottom-border">
+                    <td>Taxes</td>
+                    <td>$147.29</td>
+                  </tr>
+                  <tr class="font-18px">
+                    <td><strong>Total</strong></td>
+                    <td><strong>$1,280.27</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
 

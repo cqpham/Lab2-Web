@@ -97,6 +97,10 @@
   text-align: center;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 #items-table-cart img.media-object {
   width: 80px;
   height: 80px;
@@ -104,4 +108,21 @@
 
 #items-table-cart td {
   vertical-align: middle;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+.row-bottom-border {
+  border-bottom: thin solid lightgray;
+}
+
+.font-18px {
+  font-size: 18px;
 }
