@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Shopping Cart</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/width_changes.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="title" class="main-title">
+      <h1>The Phone Hut</h1>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-shopping-cart" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-shopping-cart">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="search-and-filter.html">Browse Devices</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="q">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit" formaction="search-and-filter.html"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Delivery
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <form>
+                    <div class="row form-group">
+                      <div class="col-sm-12">
+                        <label for="first-name">First Name</label>
+                        <input class="form-control" id="first-name" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-12">
+                        <label for="last-name">Last Name</label>
+                        <input class="form-control" id="last-name" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-4">
+                        <label for="apt-suite-num">Apt./Suite # (optional)</label>
+                        <input class="form-control" type="number" id="apt-suite-num">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-12">
+                        <label for="address">Address</label>
+                        <input class="form-control" id="address" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-6">
+                        <label for="city">City</label>
+                        <input class="form-control" id="city" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-6">
+                        <label for="province">Province/Territory</label>
+                        <select class="form-control" id="province">
+                          <option>-- Select --</option>
+                          <option>Alberta</option>
+                          <option>British Columbia</option>
+                          <option>Manitoba</option>
+                          <option>New Brunswick</option>
+                          <option>Newfoundland and Labrador</option>
+                          <option>Nova Scotia</option>
+                          <option>Northwest Territories</option>
+                          <option>Nunavut</option>
+                          <option>Ontario</option>
+                          <option>Prince Edward Island</option>
+                          <option>Quebec</option>
+                          <option>Saskatchewan</option>
+                          <option>Yukon</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-6">
+                        <label for="postal-code">Postal Code</label>
+                        <input class="form-control" id="postal-code" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-6">
+                        <label for="country">Country</label>
+                        <select class="form-control" id="country">
+                          <option>Canada</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-6">
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone-num" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-12">
+                        <label for="email">E-mail Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-sm-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Shipping Options</h3>
+                          </div>
+                          <div class="panel-body">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="shippingOptions" id="shippingOption1" value="option1" checked>
+                                Deliver TOMORROW
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="shippingOptions" id="shippingOption2" value="option2">
+                                Free Shipping - Deliver by WEDNESDAY, MARCH 15
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Payment
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Review and Submit
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+
+      <hr class="featurette-divider"/>
+
+      <footer>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
